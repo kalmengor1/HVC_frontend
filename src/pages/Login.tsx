@@ -36,7 +36,7 @@ export default function Login() {
         {/* Sección de imagen para escritorio */}
         <div className="hidden md:flex md:w-1/2 bg-brand-surface relative overflow-hidden">
           <img
-            src="/Inicio.webp"
+            src={`${import.meta.env.BASE_URL}Inicio.webp`}
             alt="Virgen de Concepción"
             className="absolute inset-0 w-full h-full object-cover drop-shadow-2xl"
           />
@@ -47,7 +47,7 @@ export default function Login() {
         <div className="w-full max-w-md bg-white p-6 md:p-8 rounded-[24px] shadow-[0_4px_12px_rgba(0,0,0,0.05)] border border-gray-100 md:border-none md:shadow-none z-10">
           <div className="flex flex-col items-center mb-8">
             <img
-              src="/Logo.webp"
+              src={`${import.meta.env.BASE_URL}Logo.webp`}
               alt="HVC Logo"
               className="w-36 h-36 mb-4 object-contain"
             />

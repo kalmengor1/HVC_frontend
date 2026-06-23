@@ -16,7 +16,7 @@ export default function Sidebar() {
   return (
     <aside className="hidden md:flex flex-col w-64 bg-white border-r border-gray-200 shrink-0">
       <div className="p-6 flex flex-col items-center border-b border-gray-100">
-        <img src="/Logo.webp" alt="Logo" className="w-20 h-20 object-contain mb-2" />
+        <img src={`${import.meta.env.BASE_URL}Logo.webp`} alt="Logo" className="w-20 h-20 object-contain mb-2" />
         <h2 className="text-center font-bold text-brand-primary-dark leading-tight">
           Consagrada<br />Chapetona
         </h2>
