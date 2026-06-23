@@ -53,13 +53,13 @@ export default function ParticipationChart({ data }: ParticipationChartProps) {
                 dataKey="value"
                 stroke="none"
                 label={({
-                  cx,
-                  cy,
-                  midAngle,
-                  innerRadius,
-                  outerRadius,
+                  cx = 0,
+                  cy = 0,
+                  midAngle = 0,
+                  innerRadius = 0,
+                  outerRadius = 0,
                   value,
-                }) => {
+                }: any) => {
                   const RADIAN = Math.PI / 180;
                   // Calcular el radio para posicionar el texto en el medio de la rebanada
                   const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
